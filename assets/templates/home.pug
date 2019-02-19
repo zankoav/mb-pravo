@@ -1,0 +1,10 @@
+include ./../mixins
+doctype html
+html
+    +head()
+    body(class="body_overflow_hidden")
+        +loader('loader__spinner_egg')
+        .app
+            +header('app__header')
+            main.app__main Main content
+            +footer('app__footer')
