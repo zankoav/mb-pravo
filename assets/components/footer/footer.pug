@@ -1,3 +1,34 @@
 mixin footer(mod)
     - var classMod = mod ? mod : ''
-    footer(class = `footer ${classMod}`) Footer
+    footer(class = `footer ${classMod}`)
+        .container
+            .footer__inner
+                .footer__content
+                    a.footer__logo-link(href="#")
+                        img.footer__logo-img(src=require("./../images/logo-footer.svg"), alt="mbpravo")
+                    .footer__info
+                        .footer__phones
+                            a.footer__phone(href="tel:+375172881313")
+                                img.footer__phone-img(src=require("./../images/phone.svg"), alt="phone")
+                                span.footer__phone-number +375 (17) 288 13 13
+                            a.footer__phone(href="tel:+375172048672")
+                                img.footer__phone-img(src=require("./../images/phone.svg"), alt="phone")
+                                span.footer__phone-number +375 (17) 204 86 72
+                        .footer__mobiles
+                            a.footer__mobile(href="tel:+375293404483")
+                                img.footer__mobile-img(src=require("./../images/velcom.svg"), alt="velcom")
+                                span.footer__mobile-number +375 (29) 340 44 83
+                            a.footer__mobile(href="tel:+375333004483")
+                                img.footer__mobile-img(src=require("./../images/velcom.svg"), alt="velcom")
+                                span.footer__mobile-number +375 (33) 300 44 83
+                            a.footer__email(href="mailto:info@spplaw.by")
+                                img.footer__email-img(src=require("./../images/envelope.svg"), alt="envelope")
+                                span.footer__email-link info@spplaw.by
+                    .footer__office
+                        span.footer__office_title Адвокатское бюро «МБПраво»
+                        span.footer__office_text 220034, г. Минск, ул. Фрунзе, 3, комн. 203 УНП 805090058. Лицензия №987654321 выдана 01.01.2018
+                .footer__copyright
+                    span.footer__copyright_text © 2019. Все права защищены
+                    .footer__copyright_development(href="#")
+                        span.footer__copyright_development-text Разработка сайта
+                        img.footer__copyright_development-img(src=require("./../images/mastak-logo.svg"), alt="mastak")
