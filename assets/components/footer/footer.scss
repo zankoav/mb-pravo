@@ -1,5 +1,188 @@
 @import "./../../common/constants";
 
+$GREY: #e6e7e8;
+$GREY_LIGHT: #718886;
+
 .footer {
-    background-color: red;
+
+    &__bg-color {
+        background-color: $GREY;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        padding-top: 2.5rem;
+        padding-bottom: 1.5rem;
+
+        @include sm {
+            padding-bottom: 1.75rem;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include sm {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-bottom: 1.25rem;
+        }
+
+        @include md {
+            padding-bottom: 1.75rem;
+        }
+
+        @include lg {
+            padding-bottom: 1.25rem;
+        }
+    }
+
+    &__logo-link {
+        padding-bottom: 1.5rem;
+    }
+
+    &__info {
+        padding-bottom: 1rem;
+
+        @include sm {
+            order: -1;
+            padding-bottom: initial;
+        }
+
+        @include md {
+            display: flex;
+        }
+    }
+
+    &__phones {
+        display: flex;
+        flex-direction: column;
+
+        @include md {
+            padding-right: 3rem;
+        }
+    }
+
+    &__phone {
+        color: $BLACK;
+        font-family: 'OpenSans', sans-serif;
+        font-size: 14px;
+        line-height: 1.43;
+    }
+
+    &__phone-img {
+        padding-right: .75rem;
+
+        @include hd {
+            padding-right: 1rem;
+        }
+    }
+
+    &__mobiles {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__mobile {
+        color: $BLACK;
+        font-family: 'OpenSans', sans-serif;
+        font-size: 14px;
+        line-height: 1.43;
+    }
+
+    &__mobile-img {
+        padding-right: .75rem;
+
+        @include hd {
+            padding-right: 1rem;
+        }
+    }
+
+    &__email-img {
+        padding-right: .75rem;
+
+        @include hd {
+            padding-right: 1rem;
+        }
+    }
+
+    &__email-link {
+        color: $BLACK;
+        font-family: 'OpenSans', sans-serif;
+        font-size: 14px;
+        line-height: 1.43;
+    }
+
+    &__office {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1.25rem;
+
+        @include sm {
+            width: 38%;
+            text-align: initial;
+            padding-bottom: initial;
+        }
+
+        @include m-land {
+            width: 42%;
+        }
+
+        @include lg {
+            width: 31%;
+        }
+
+        &_title {
+            color: $GREY_LIGHT;
+            font-family: 'OpenSans', sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 1;
+            padding-bottom: .5rem;
+        }
+
+        &_text {
+            color: $BLACK;
+            font-family: 'OpenSans', sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+    }
+
+    &__copyright {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include sm {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &_text {
+            color: $BLACK;
+            font-family: 'OpenSans', sans-serif;
+            font-size: 12px;
+            line-height: 1;
+            padding-bottom: .25rem;
+        }
+
+        &_development {
+            color: $GREY_LIGHT;
+            font-family: OpenSans, sans-serif;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            line-height: 1.17;
+        }
+
+        &_development-text {
+            padding-right: 1.5rem;
+        }
+    }
 }
