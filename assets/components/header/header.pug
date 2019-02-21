@@ -1,3 +1,31 @@
-mixin header(mod)
+mixin header(mod,subMod)
     - var classMod = mod ? mod : ''
-    header(class = `header ${classMod}`) Header
+    - var classSubMod = subMod ? subMod : ''
+    header(class = `header ${classMod}`)
+        .container
+            .header__inner
+                a.header__logo(href="#")
+                    img.header__logo-img(src=require("./../images/logo-header.svg"), alt="mbpravo")
+                ul.header__list
+                    li.header__item
+                        a.header__item-link(href="#") Главная
+                    li.header__item
+                        a.header__item-link(href="#") Команда
+                    li.header__item.header__submenu-list
+                        a.header__item-link.header__item-submenu(href="#") Практики
+                            ul.header__submenu
+                                li.header__submenu-item
+                                    a(class = `header__submenu-link ${classSubMod}`)(href="#") Гражданское право
+                                li.header__submenu-item
+                                    a(class = `header__submenu-link ${classSubMod}`)(href="#") Налоговое право
+                                li.header__submenu-item
+                                    a(class = `header__submenu-link ${classSubMod}`)(href="#") Страховое право
+                                li.header__submenu-item
+                                    a(class = `header__submenu-link ${classSubMod}`)(href="#") Коммерческое право
+                                li.header__submenu-item
+                                    a(class = `header__submenu-link ${classSubMod}`)(href="#") Корпоративное право
+                    li.header__item
+                        a.header__item-link(href="#") Контакты
+                a(class='header__burger' href='#')
+                    span.header__line-burger
+                    span.header__line-burger

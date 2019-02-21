@@ -1,12 +1,12 @@
 @import "./../../common/constants";
 
-$GREY: #e6e7e8;
-$GREY_LIGHT: #718886;
+$GREY_LIGHT: #e6e7e8;
+$GREY: #718886;
 
 .footer {
 
     &__bg-color {
-        background-color: $GREY;
+        background-color: $GREY_LIGHT;
     }
 
     &__inner {
@@ -122,6 +122,7 @@ $GREY_LIGHT: #718886;
         flex-direction: column;
         text-align: center;
         padding-bottom: 1.25rem;
+        width: 90%;
 
         @include sm {
             width: 38%;
@@ -138,7 +139,7 @@ $GREY_LIGHT: #718886;
         }
 
         &_title {
-            color: $GREY_LIGHT;
+            color: $GREY;
             font-family: 'OpenSans', sans-serif;
             font-size: 12px;
             font-weight: bold;
@@ -173,7 +174,7 @@ $GREY_LIGHT: #718886;
         }
 
         &_development {
-            color: $GREY_LIGHT;
+            color: $GREY;
             font-family: OpenSans, sans-serif;
             font-size: 12px;
             display: flex;
