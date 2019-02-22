@@ -8,3 +8,5 @@ import './../mastak-lib/loader/loader';
 import './../common/_common.scss';
 import './../components/header/header';
 import './../components/footer/footer';
+import './../components/welcome/welcome';
+import './../components/home/home';
