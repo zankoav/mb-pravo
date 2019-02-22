@@ -1,0 +1,26 @@
+mixin welcome ()
+    .welcome
+        .welcome__container.swiper-container
+            .welcome__wrapper.swiper-wrapper
+                .welcome__slide.swiper-slide
+                    .welcome__inner
+                        .welcome__item(style=`background-image:url(${require("./../images/welcome.png")})`)
+                            .welcome__content.container
+                                .welcome__title Налоговое право
+                                .welcome__subtitle для бизнеса
+                                span.welcome__button Подробнее
+                .welcome__slide.swiper-slide
+                    .welcome__inner
+                        .welcome__item(style=`background-image:url(${require("./../images/2.jpg")})`)
+                            .welcome__content.container
+                                .welcome__title Налоговое право
+                                .welcome__subtitle для бизнеса
+                                span.welcome__button Подробнее
+                .welcome__slide.swiper-slide
+                    .welcome__inner
+                        .welcome__item(style=`background-image:url(${require("./../images/3.jpg")})`)
+                            .welcome__content.container
+                                .welcome__title Налоговое право
+                                .welcome__subtitle для бизнеса
+                                span.welcome__button Подробнее
+            .welcome__pagination.swiper-pagination

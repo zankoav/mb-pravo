@@ -4,7 +4,9 @@ html
     +head()
     body(class="body_overflow_hidden")
         +loader('loader__spinner_egg')
-        .app
-            +header('header__bg-color','header__submenu-link_color-black')
-            main.app__main Main content
-            +footer('footer__bg-color')
+        .home
+            .home__main
+                +header(null,'header__submenu-link_color-black','header__submenu_bg-color')
+                +welcome()
+            .home__footer
+                +footer('footer__bg-color')

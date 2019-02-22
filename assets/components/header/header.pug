@@ -1,6 +1,8 @@
-mixin header(mod,subMod)
+mixin header(mod,subModLink,subModBgColor)
     - var classMod = mod ? mod : ''
-    - var classSubMod = subMod ? subMod : ''
+    - var classSubMod = subModLink ? subModLink : ''
+    - var classSubModBgColor = subModBgColor ? subModBgColor : ''
+
     header(class = `header ${classMod}`)
         .container
             .header__inner
@@ -13,7 +15,7 @@ mixin header(mod,subMod)
                         a.header__item-link(href="#") Команда
                     li.header__item.header__submenu-list
                         a.header__item-link.header__item-submenu(href="#") Практики
-                            ul.header__submenu
+                            ul(class=`header__submenu ${classSubModBgColor}`)
                                 li.header__submenu-item
                                     a(class = `header__submenu-link ${classSubMod}`)(href="#") Гражданское право
                                 li.header__submenu-item

@@ -12,11 +12,12 @@ $GREY: #718886;
     &__inner {
         display: flex;
         flex-direction: column;
-        padding-top: 2.5rem;
+        padding-top: 1.5rem;
         padding-bottom: 1.5rem;
 
         @include sm {
-            padding-bottom: 1.75rem;
+            padding-top: 1rem;
+            padding-bottom: .5rem;
         }
     }
 
@@ -29,20 +30,12 @@ $GREY: #718886;
             flex-direction: row-reverse;
             justify-content: space-between;
             align-items: flex-start;
-            padding-bottom: 1.25rem;
-        }
-
-        @include md {
-            padding-bottom: 1.75rem;
-        }
-
-        @include lg {
-            padding-bottom: 1.25rem;
+            padding-bottom: .5rem;
         }
     }
 
     &__logo-link {
-        padding-bottom: 1.5rem;
+        padding-bottom: 1rem;
     }
 
     &__info {
@@ -70,7 +63,7 @@ $GREY: #718886;
     &__phone {
         color: $BLACK;
         font-family: 'OpenSans', sans-serif;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.43;
     }
 
@@ -90,7 +83,7 @@ $GREY: #718886;
     &__mobile {
         color: $BLACK;
         font-family: 'OpenSans', sans-serif;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.43;
     }
 
@@ -113,7 +106,7 @@ $GREY: #718886;
     &__email-link {
         color: $BLACK;
         font-family: 'OpenSans', sans-serif;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.43;
     }
 
