@@ -1,0 +1,12 @@
+include ./../mixins
+doctype html
+html
+    +head()
+    body(class="body_overflow_hidden")
+        +loader('loader__spinner_egg')
+        .team
+            .team__main
+                +header('header__bg-color',null,'header__submenu_bg-color')
+                +team-cards()
+            .team__footer
+                +footer('footer__bg-color')

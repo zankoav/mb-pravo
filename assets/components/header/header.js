@@ -10,7 +10,7 @@ $('.header__burger').click(function (event) {
 let headerSubmenu = $('.header__submenu');
 let headerSubmenuItem =$('.header__submenu-item');
 
-$('.header__item-submenu').click(function (event) {
+$('.header__item-submenu ').click(function (event) {
     event.preventDefault();
     headerSubmenu.toggleClass('header__submenu_active');
 

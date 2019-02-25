@@ -26,6 +26,7 @@ const THEME_NAME = 'mb-pravo';
 let entries = {
     home: './home.js',
     p404: './p404.js',
+    team: './team.js',
 };
 
 let pugs = {
@@ -34,6 +35,9 @@ let pugs = {
     },
     p404: {
         title: "404 title"
+    },
+    team: {
+        team: "team title"
     }
 };
 
