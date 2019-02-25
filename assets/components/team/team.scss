@@ -1,13 +1,9 @@
 @import "./../../common/constants";
 
-.home {
+.team {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-
-    @include sm {
-        height: 100vh;
-    }
+    height: 100%;
 
     &__main {
         flex: 1 0 auto;

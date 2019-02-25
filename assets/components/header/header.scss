@@ -3,7 +3,7 @@
 $GREY: #718886;
 $GREY_LIGHT: #d8d8d8;
 $RED: #d60c07;
-
+$GREY_ULTRA: #f9f9f9;
 
 @mixin animationItem($time) {
     animation-delay: $time;
@@ -15,7 +15,7 @@ $RED: #d60c07;
     z-index: 999;
 
     &__bg-color {
-        background-color: $WHITE;
+        background-color: $GREY_ULTRA;
     }
 
     &__inner {
@@ -111,6 +111,8 @@ $RED: #d60c07;
         font-size: 14px;
         transition: all .4s;
         text-transform: uppercase;
+        display: block;
+        position: relative;
 
         &:hover {
             color: $RED;
@@ -145,12 +147,13 @@ $RED: #d60c07;
     &__submenu {
         display: none;
         overflow: hidden;
+        min-width: 180px;
 
         @include lg {
             position: absolute;
             background-color: $WHITE;
             overflow: initial;
-            margin-left: -7rem;
+            right: 0;
             max-width: initial;
             margin-top: .75rem;
         }
@@ -218,6 +221,22 @@ $RED: #d60c07;
         &:nth-child(6) {
             @include animationItem(.6s);
         }
+
+        &:nth-child(7) {
+            @include animationItem(.7s);
+        }
+
+        &:nth-child(8) {
+            @include animationItem(.8s);
+        }
+
+        &:nth-child(9) {
+            @include animationItem(.9s);
+        }
+
+        &:nth-child(10) {
+            @include animationItem(1s);
+        }
     }
 
     &__submenu-item_close {
@@ -230,26 +249,42 @@ $RED: #d60c07;
         }
 
         &:nth-child(1) {
-            @include animationItem(.6s);
+            @include animationItem(1s);
         }
 
         &:nth-child(2) {
-            @include animationItem(.5s);
+            @include animationItem(.9s);
         }
 
         &:nth-child(3) {
-            @include animationItem(.4s);
+            @include animationItem(.8s);
         }
 
         &:nth-child(4) {
-            @include animationItem(.3s);
+            @include animationItem(.7s);
         }
 
         &:nth-child(5) {
-            @include animationItem(.2s);
+            @include animationItem(.6s);
         }
 
         &:nth-child(6) {
+            @include animationItem(.5s);
+        }
+
+        &:nth-child(7) {
+            @include animationItem(.4s);
+        }
+
+        &:nth-child(8) {
+            @include animationItem(.3s);
+        }
+
+        &:nth-child(9) {
+            @include animationItem(.2s);
+        }
+
+        &:nth-child(10) {
             @include animationItem(.1s);
         }
     }
