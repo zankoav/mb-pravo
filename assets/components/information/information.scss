@@ -1,0 +1,144 @@
+@import "./../../common/constants";
+
+$GREY_DARK: #718886;
+
+.information {
+    height: 100%;
+
+    &__inner {
+        background-image: linear-gradient(64deg, #ececec, #dedede);
+        padding-top: 4rem;
+        height: 100%;
+    }
+
+    &__title {
+        color: $GREY_DARK;
+        font-family: 'Open-Sans', sans-serif;
+        font-size: 48px;
+        line-height: 1;
+        padding-bottom: 2.5rem;
+    }
+
+    &__contacts {
+        @include sm {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__contacts-wrapper {
+        @include sm {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @include md {
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding-left: 5rem;
+        }
+
+        @include lg {
+            padding-left: initial;
+        }
+    }
+
+    &__addres {
+        color: $GREY_DARK;
+        font-family: 'Open-Sans', sans-serif;
+        font-size: 20px;
+        line-height: 1.4;
+        padding-bottom: 1.25rem;
+
+        @include sm {
+            width: 46%;
+        }
+
+        @include lg {
+            width: 30%;
+        }
+    }
+
+    &__phones {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1.25rem;
+
+        @include md {
+            flex-direction: row;
+            padding-bottom: initial;
+        }
+    }
+
+    &__phones-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__phones-inner {
+        display: flex;
+        flex-direction: column;
+
+        @include md {
+            padding-left: 5rem;
+        }
+    }
+
+    &__phone {
+        color: $GREY_DARK;
+        font-family: 'Open-Sans', sans-serif;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    &__phone-img {
+        padding-right: .75rem;
+
+        @include hd {
+            padding-right: 1rem;
+        }
+    }
+
+    &__mail {
+        padding-bottom: 2.25rem;
+
+        @include sm {
+            padding-bottom: initial;
+        }
+
+        @include lg {
+            padding-left: 5rem;
+        }
+    }
+
+    &__email {
+        color: $GREY_DARK;
+        font-family: 'Open-Sans', sans-serif;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    &__email-img {
+        padding-right: .75rem;
+
+        @include hd {
+            padding-right: 1rem;
+        }
+    }
+
+    &__map {
+        padding-bottom: 1.25rem;
+
+        @include sm {
+            padding: 3rem 2rem 0;
+        }
+
+        @include md {
+            padding: 2rem 2rem 1.25rem;
+        }
+
+        @include lg {
+            padding: 3.5rem 2rem 1.25rem;
+        }
+    }
+}
