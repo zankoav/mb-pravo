@@ -1,0 +1,12 @@
+include ./../mixins
+doctype html
+html
+    +head()
+    body(class="body_overflow_hidden")
+        +loader('loader__spinner_egg')
+        .contacts
+            .contacts__main
+                +header(null,'header__submenu-link_color-black','header__submenu_bg-color')
+                +information()
+            .contacts__footer
+                +footer('footer__bg-color')
