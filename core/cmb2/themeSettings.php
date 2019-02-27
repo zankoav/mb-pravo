@@ -69,4 +69,24 @@ function mb_pravo_register_theme_options_metabox()
 		 'id' => 'email',
 		 'type' => 'text_email'
 	));
+	$cmb_options->add_field(array(
+		 'name' => esc_html__('Настройки карты', THEME_NAME),
+		 'id' => 'ot_map_title',
+		 'type' => 'title',
+	));
+	$cmb_options->add_field(array(
+		 'name' => esc_html__('Центр карты', THEME_NAME),
+		 'id' => 'map_center',
+		 'type' => 'text'
+	));
+	$cmb_options->add_field(array(
+		 'name' => esc_html__('Координаты метки', THEME_NAME),
+		 'id' => 'marc_coordinate',
+		 'type' => 'text'
+	));
+	$cmb_options->add_field(array(
+		 'name' => esc_html__('Текст метки', THEME_NAME),
+		 'id' => 'marc_text',
+		 'type' => 'text'
+	));
 }

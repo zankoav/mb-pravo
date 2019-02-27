@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Home
+ * Template Name: Home Template
  */
 get_header();
 
@@ -13,7 +13,6 @@ $slider = get_post_meta(get_the_ID(), 'slider', true);
 	</div>
 	<div class="home">
 		<div class="home__main">
-
 			<?php get_template_part('/core/views/header_view'); ?>
 			<div class="welcome">
 				<div class="welcome__container swiper-container">
@@ -31,7 +30,7 @@ $slider = get_post_meta(get_the_ID(), 'slider', true);
 										<div class="welcome__content container">
 											<div class="welcome__title"><?= $title; ?></div>
 											<div class="welcome__subtitle"><?= $subtitle; ?></div>
-											<a href="<?= $button_url?>" class="welcome__button"><?= $button_text; ?></a>
+											<a href="<?= $button_url ?>" class="welcome__button"><?= $button_text; ?></a>
 										</div>
 									</div>
 								</div>
@@ -43,7 +42,9 @@ $slider = get_post_meta(get_the_ID(), 'slider', true);
 			</div>
 		</div>
 
-		<?php get_template_part('/core/views/footer_view'); ?>
+		<div class="home__footer">
+			<?php get_template_part('/core/views/footer_view'); ?>
+		</div>
 
 	</div>
 

@@ -11,7 +11,6 @@ $phone_3 = $option['phone_3'];
 $phone_4 = $option['phone_4'];
 ?>
 
-<div class="home__footer">
 	<footer class="footer footer__bg-color">
 		<div class="container">
 			<div class="footer__inner">
@@ -65,4 +64,3 @@ $phone_4 = $option['phone_4'];
 			</div>
 		</div>
 	</footer>
-</div>
