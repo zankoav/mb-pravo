@@ -28,6 +28,7 @@ let entries = {
     p404: './p404.js',
     team: './team.js',
     contacts: './contacts.js',
+    partner: './partner.js',
 };
 
 let pugs = {
@@ -42,6 +43,9 @@ let pugs = {
     },
     contacts: {
         contacts: "contacts title"
+    },
+    partner: {
+        partner: "partner title"
     }
 };
 
