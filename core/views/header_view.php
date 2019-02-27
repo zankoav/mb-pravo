@@ -32,51 +32,6 @@ if(!empty($temp)){
 				<img class="header__logo-img" src="<?= $main_logo;?>" alt="mbpravo">
 			</a>
 			<?php wp_nav_menu( $mainMenuArgs ); ?>
-<!--			-->
-<!--			<ul class="header__list">-->
-<!--				<li class="header__item">-->
-<!--					<a class="header__item-link" href="#">Главная</a>-->
-<!--				</li>-->
-<!--				<li class="header__item">-->
-<!--					<a class="header__item-link" href="#">Команда</a>-->
-<!--				</li>-->
-<!--				<li class="header__item header__submenu-list">-->
-<!--					<a class="header__item-link header__item-submenu" href="#">Практики</a>-->
-<!--					<ul class="header__submenu header__submenu_bg-color">-->
-<!--						<li class="header__submenu-item">-->
-<!--							<a class="header__submenu-link header__submenu-link_color-black" href="#">Гражданское право </a>-->
-<!--						</li>-->
-<!--						<li class="header__submenu-item">-->
-<!--							<a class="header__submenu-link header__submenu-link_color-black" href="#">Налоговое право </a>-->
-<!--						</li>-->
-<!--						<li class="header__submenu-item">-->
-<!--							<a class="header__submenu-link header__submenu-link_color-black" href="#">Страховое право </a>-->
-<!--						</li>-->
-<!--						<li class="header__submenu-item">-->
-<!--							<a class="header__submenu-link header__submenu-link_color-black" href="#">Коммерческое право </a>-->
-<!--						</li>-->
-<!--						<li class="header__submenu-item">-->
-<!--							<a class="header__submenu-link header__submenu-link_color-black" href="#">Корпоративное право </a>-->
-<!--						</li>-->
-<!--						<li class="header__submenu-item">-->
-<!--							<a class="header__submenu-link header__submenu-link_color-black" href="#">Корпоративное право </a>-->
-<!--						</li>-->
-<!--						<li class="header__submenu-item">-->
-<!--							<a class="header__submenu-link header__submenu-link_color-black" href="#">Корпоративное право </a>-->
-<!--						</li>-->
-<!--						<li class="header__submenu-item">-->
-<!--							<a class="header__submenu-link header__submenu-link_color-black" href="#">Корпоративное право </a>-->
-<!--						</li>-->
-<!--						<li class="header__submenu-item">-->
-<!--							<a class="header__submenu-link header__submenu-link_color-black" href="#">Корпоративное право </a>-->
-<!--						</li>-->
-<!--					</ul>-->
-<!--				</li>-->
-<!--				<li class="header__item">-->
-<!--					<a class="header__item-link" href="#">Контакты</a>-->
-<!--				</li>-->
-<!--			</ul>-->
-
 			<a class="header__burger" href="#">
 				<span class="header__line-burger"></span>
 				<span class="header__line-burger"></span>
