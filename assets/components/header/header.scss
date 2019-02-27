@@ -19,6 +19,10 @@ $GREY_ULTRA: #f9f9f9;
         background-color: $GREY_ULTRA;
     }
 
+    &__bg-transparent {
+        background-color: transparent;
+    }
+
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -108,7 +112,7 @@ $GREY_ULTRA: #f9f9f9;
 
     &__item-link {
         color: $BLACK;
-        font-family: 'Open-Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         font-size: 14px;
         transition: all .4s;
         text-transform: uppercase;
@@ -292,7 +296,7 @@ $GREY_ULTRA: #f9f9f9;
 
     &__submenu-link {
         color: $GREY;
-        font-family: 'Open-Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         font-size: 14px;
         transition: all .4s;
 
