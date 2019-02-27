@@ -17,8 +17,15 @@ $mainMenuArgs = [
 	 'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 	 'depth'          => 5,
 ];
+
+
+$temp = get_post_meta(get_the_ID(),'_wp_page_template',true);
+$is_home = '';
+if(!empty($temp)){
+	$is_home = $temp == 'template-home.php' ? 'header__bg-transparent' : '';
+}
 ?>
-<header class="header ">
+<header class="header <?= $is_home;?>">
 	<div class="container">
 		<div class="header__inner">
 			<a class="header__logo" href="/">
