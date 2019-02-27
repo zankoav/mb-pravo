@@ -1,7 +1,8 @@
 mixin partner-card()
     .partner-card
         .container
-            +backwards()
+            .partner-card__backwards
+                +backwards()
             .partner-card__inner
                 .partner-card__partner
                     img.partner-card__partner-img(src=require("./../images/partner-3.png"), alt="partner")
@@ -24,4 +25,6 @@ mixin partner-card()
                         a.partner-card__email(href="mailto:veronica.borodavko@mbpravo.by")
                             img.partner-card__email-img(src=require("./../images/envelope.svg"), alt="envelope")
                             span.partner-card__email-link veronica.borodavko@mbpravo.by
-            .partner-card__button
+                .partner-card__buttons
+                    a.partner-card__button-left(hfer="#")
+                    a.partner-card__button-right(hfer="#")
