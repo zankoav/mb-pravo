@@ -40,7 +40,7 @@ $RED: #d41319;
 
     &__title {
         color: $GREY_MIDDLE;
-        font-family: 'Open-Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         font-size: 27px;
         line-height: 1;
 
@@ -178,7 +178,7 @@ $RED: #d41319;
 
     &__name {
         font-size: 20px;
-        font-family: 'Open-Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         color: $GREY_DARK;
 
         @include sm {
@@ -213,7 +213,7 @@ $RED: #d41319;
 
     &__description {
         font-size: 14px;
-        font-family: 'Open-Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         color: $GREY_DARK;
         line-height: 1.14;
         padding-bottom: 2.5rem;
@@ -224,7 +224,7 @@ $RED: #d41319;
     }
 
     &__more {
-        font-family: 'Open-Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         font-size: 12px;
         text-transform: uppercase;
         padding: 0.7rem 1.25rem .5rem;
