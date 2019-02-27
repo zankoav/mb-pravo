@@ -19,6 +19,9 @@ $GREY_ULTRA: #f9f9f9;
         background-color: $GREY_ULTRA;
     }
 
+    &__bg-transparent {
+        background-color: transparent;
+    }
 
     &__inner {
         display: flex;
