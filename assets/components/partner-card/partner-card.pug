@@ -1,0 +1,27 @@
+mixin partner-card()
+    .partner-card
+        .container
+            +backwards()
+            .partner-card__inner
+                .partner-card__partner
+                    img.partner-card__partner-img(src=require("./../images/partner-3.png"), alt="partner")
+                .partner-card__wrapper
+                    .partner-card__title Вероника Бородавко
+                    .partner-card__position Адвокат
+                    .partner-card__date Практикует с 2013 года
+                    .partner-card__specializations Специализации:
+                    ul.partner-card__specializations-list
+                        li.partner-card__specialization судебные споры
+                        li.partner-card__specialization корпоративные отношения
+                        li.partner-card__specialization налоги, таможенное регулирование
+                        li.partner-card__specialization договоры
+                        li.partner-card__specialization недвижимость и строительство
+                        li.partner-card__specialization страхование
+                    .partner-card__contacts
+                        a.partner-card__phone(href="tel:+375291183337")
+                            img.partner-card__phone-img(src=require("./../images/phone.svg"), alt="phone")
+                            span.partner-card__phone-number +375 29 118 33 37
+                        a.partner-card__email(href="mailto:veronica.borodavko@mbpravo.by")
+                            img.partner-card__email-img(src=require("./../images/envelope.svg"), alt="envelope")
+                            span.partner-card__email-link veronica.borodavko@mbpravo.by
+            .partner-card__button

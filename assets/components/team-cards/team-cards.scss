@@ -93,6 +93,7 @@ $RED: #d41319;
 
         @include md {
             flex: 1 0 50%;
+            max-width: 50%;
         }
     }
 
@@ -131,21 +132,25 @@ $RED: #d41319;
 
     &__partner {
         display: flex;
-        flex: 0 0 75%;
+        flex: 1 0 75%;
+        max-width: 75%;
         position: relative;
         left: 0;
 
         @include sm {
-            flex: 0 0 42%;
+            flex: 1 0 42%;
+            max-width: 42%;
             position: relative;
         }
 
         @include m-land {
-            flex: 0 0 40%;
+            flex: 1 0 40%;
+            max-width: 40%;
         }
 
         @include md {
-            flex: 0 0 50%;
+            flex: 1 0 50%;
+            max-width: 50%;
         }
     }
 
