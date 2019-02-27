@@ -17,8 +17,13 @@
 		) );
 
 		$cmb_options->add_field( array(
-			'name' => esc_html__( 'Logo', THEME_NAME ),
+			'name' => esc_html__( 'Logo header', THEME_NAME ),
 			'id'   => 'main_logo',
 			'type' => 'file'
+		) );
+		$cmb_options->add_field( array(
+			 'name' => esc_html__( 'Logo footer', THEME_NAME ),
+			 'id'   => 'footer_logo',
+			 'type' => 'file'
 		) );
 	}
