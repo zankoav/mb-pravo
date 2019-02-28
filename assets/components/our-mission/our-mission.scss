@@ -1,0 +1,40 @@
+@import "./../../common/constants";
+
+.our-mission{
+
+  border-top: solid 2px #979797;
+  border-bottom: solid 2px #979797;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+    @include sm{
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+    @include md{
+      margin-top: 64px;
+      margin-bottom: 64px;
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+
+
+  &__text_big{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    color: #718886;
+    padding-right: 10px;
+  }
+
+  &__text_little{
+    font-size: 22px;
+    line-height: 30px;
+    color: #718886;
+
+  }
+
+}
