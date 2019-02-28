@@ -28,7 +28,7 @@ let entries = {
     p404: './p404.js',
     team: './team.js',
     contacts: './contacts.js',
-    practice: './practice.js'
+    practice: './practice.js',
     partner: './partner.js',
 };
 
