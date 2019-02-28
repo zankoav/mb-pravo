@@ -7,7 +7,7 @@
 
 @include loader();
 
-//@include editor-content();
+@include editor-content();
 
 html, body {
     height: 100%;

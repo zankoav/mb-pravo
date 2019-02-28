@@ -30,6 +30,22 @@ $GREY_MIDDLE: #878787;
             background-position: 0 10%;
             background-size: 110% 80%;
         }
+
+        @include xl {
+            background-position: 0 0;
+        }
+
+        @include xll {
+            background-size: 100% 70%;
+        }
+
+        @include hd {
+            background-size: 106% 56%;
+        }
+
+        @include xhd {
+            background-size: 104% 46%;
+        }
     }
 
     &__backwards {
