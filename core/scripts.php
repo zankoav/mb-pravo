@@ -14,6 +14,9 @@ add_action('template_redirect', function () {
     }else if (is_404()) {
 		  wp_enqueue_script('p404', Assets::getJs('p404'), false, null, true);
 	  }
+    if (is_post_type_archive('partner')){
+	    wp_enqueue_script('team', Assets::getJs('team'), false, null, true);
+    }
 
   });
 });

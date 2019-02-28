@@ -19,13 +19,20 @@ $mainMenuArgs = [
 ];
 
 
+$query_obj = get_queried_object();
 $temp = get_post_meta(get_the_ID(),'_wp_page_template',true);
-$is_home = '';
+$header_class = '';
+
+//if home page -- transparent
 if(!empty($temp)){
-	$is_home = $temp == 'template-home.php' ? 'header__bg-transparent' : '';
+	$header_class = $temp == 'template-home.php' ? 'header__bg-transparent' : '';
+}
+//if partner archive page -- transparent
+if($query_obj->query_var == 'partner'){
+	$header_class = 'header__bg-color';
 }
 ?>
-<header class="header <?= $is_home;?>">
+<header class="header <?= $header_class;?>">
 	<div class="container">
 		<div class="header__inner">
 			<a class="header__logo" href="/">
