@@ -8,12 +8,18 @@
 
 			if ( is_page_template( 'template-home.php' ) ) {
 				wp_enqueue_style( 'home', Assets::getCss( 'home' ), false, null );
-			} else if ( is_page_template( 'template-contacts.php' ) ) {
+			}
+			else if ( is_page_template( 'template-contacts.php' ) ) {
 				wp_enqueue_style( 'contacts', Assets::getCss( 'contacts' ), false, null );
-			} else if ( is_404() ) {
+			}
+			else if ( is_404() ) {
 				wp_enqueue_style( 'p404', Assets::getCss( 'p404' ), false, null );
-			} else if ( is_post_type_archive('partner')) {
+			}
+			else if ( is_post_type_archive('partner')) {
 				wp_enqueue_style( 'team', Assets::getCss( 'team' ), false, null );
+			}
+			else if ( is_singular( 'practice' ) ) {
+				wp_enqueue_style( 'practice', Assets::getCss( 'practice' ), false, null );
 			}
 
 		} );
