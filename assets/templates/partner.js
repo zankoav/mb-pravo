@@ -11,3 +11,4 @@ import './../components/footer/footer';
 import './../components/backwards/backwards';
 import './../components/partner/partner';
 import './../components/partner-card/partner-card';
+import './../components/partner-description/partner-description';
