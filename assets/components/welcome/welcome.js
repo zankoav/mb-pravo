@@ -1,11 +1,11 @@
 import './welcome.scss';
-import $ from "jquery";
 import Swiper from 'swiper';
 
 
-new Swiper('.swiper-container', {
+new Swiper('.welcome__container', {
     pagination: {
-        el: '.swiper-pagination',
+        el: '.welcome__pagination',
+        clickable: true,
         bulletClass: 'welcome__pagination_bullet',
         bulletActiveClass: 'welcome__pagination_bullet-active',
     },

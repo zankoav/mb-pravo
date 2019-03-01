@@ -43,6 +43,8 @@ $GREY: #d8d8d8;
         background-size: cover;
         background-repeat: no-repeat;
         padding-bottom: 16rem;
+        display: flex;
+        align-items: center;
 
         @include md {
             padding-bottom: initial;
@@ -50,17 +52,7 @@ $GREY: #d8d8d8;
     }
 
     &__content {
-        padding-top: 11rem;
-
-        @include sm {
-            padding-top: 13rem;
-            padding-left: 4.5rem;
-        }
-
-        @include md {
-            padding-top: 12rem;
-            padding-left: 5rem;
-        }
+        flex: 1;
     }
 
     &__title {
@@ -121,6 +113,11 @@ $GREY: #d8d8d8;
     }
 
     &__pagination {
+
+        span {
+            cursor: pointer;
+        }
+
         &_bullet {
             width: 10px;
             height: 10px;
