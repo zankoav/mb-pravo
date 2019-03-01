@@ -20,7 +20,12 @@ require_once __DIR__ . '/core/scripts.php';
 
 require_once __DIR__ . '/core/cmb2/themeSettings.php';
 require_once __DIR__ . '/core/cmb2/homePageSettings.php';
+
 require_once __DIR__ . '/core/postTypes/partnerPostType.php';
 require_once __DIR__ . '/core/cmb2/partnerMeta.php';
+require_once __DIR__ . '/core/postTypes/practicePostType.php';
+require_once __DIR__ . '/core/cmb2/practiceMeta.php';
 
 require_once __DIR__ . '/core/orderPatrners.php';
+require_once __DIR__ . '/core/shortCode.php';
+
