@@ -2,7 +2,7 @@
 get_header();
 $sub_title = get_post_meta(get_the_ID(), 'sub_title', true);
 $photo = get_post_meta(get_the_ID(), 'photo', true);
-$content = apply_filters( 'the_content', get_post_meta( get_the_id(), 'content', true ) );
+$content = apply_filters('the_content', get_post_meta(get_the_id(), 'content', true));
 ?>
 	<div class="loader">
 		<div class="loader__spinner loader__spinner_egg"></div>
@@ -36,7 +36,10 @@ $content = apply_filters( 'the_content', get_post_meta( get_the_id(), 'content',
 										<img class="practice-content__about_row-information-column-image"
 										     src="<?= $photo; ?>" alt="partners">
 									</div>
-									<?= wpautop($content); ?>
+
+									<div class="practice-content__row_about-information-text">
+										<?= wpautop($content); ?>
+									</div>
 								</div>
 							</div>
 						</div>
