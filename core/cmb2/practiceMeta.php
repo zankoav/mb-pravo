@@ -34,5 +34,8 @@ function practice_options_metabox()
 		 'name' => esc_html__('Контент', THEME_NAME),
 		 'id' => 'content',
 		 'type' => 'wysiwyg',
+		 'options' => [
+				'tinymce' => true,
+		 ],
 	));
 }

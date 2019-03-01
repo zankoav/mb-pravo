@@ -27,3 +27,5 @@ require_once __DIR__ . '/core/postTypes/practicePostType.php';
 require_once __DIR__ . '/core/cmb2/practiceMeta.php';
 
 require_once __DIR__ . '/core/orderPatrners.php';
+require_once __DIR__ . '/core/shortCode.php';
+

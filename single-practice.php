@@ -2,7 +2,7 @@
 get_header();
 $sub_title = get_post_meta(get_the_ID(), 'sub_title', true);
 $photo = get_post_meta(get_the_ID(), 'photo', true);
-$content = get_post_meta(get_the_ID(), 'content', true);
+$content = apply_filters( 'the_content', get_post_meta( get_the_id(), 'content', true ) );
 ?>
 	<div class="loader">
 		<div class="loader__spinner loader__spinner_egg"></div>
@@ -36,16 +36,7 @@ $content = get_post_meta(get_the_ID(), 'content', true);
 										<img class="practice-content__about_row-information-column-image"
 										     src="<?= $photo; ?>" alt="partners">
 									</div>
-
 									<?= wpautop($content); ?>
-
-									<!--<div class="our-mission">-->
-									<!--<span class="our-mission__text_big">Наша миссия:</span>-->
-									<!--<span class="our-mission__text_little">-->
-									<!--оказывать качественную юридическую помощь, опираясь на знания и опыт команды профессионалов.-->
-									<!--</span>-->
-									<!--</div>-->
-
 								</div>
 							</div>
 						</div>
