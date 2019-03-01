@@ -1,6 +1,6 @@
 <?php
-add_action( 'pre_get_posts', 'tl_project_page' );
-// Show all Projects on Projects Archive Page
+add_action( 'loop_start', 'tl_project_page' );
+/**@var WP_Query $query */
 function tl_project_page( $query ) {
 	if (!is_admin() && is_post_type_archive( 'partner' ) ) {
 		$query->set( 'posts_per_page', '-1' );
