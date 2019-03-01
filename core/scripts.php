@@ -22,6 +22,11 @@ add_action('template_redirect', function () {
 		else if (is_singular('practice')) {
 			wp_enqueue_script('practice', Assets::getJs('practice'), false, null, true);
 		}
-
+		else if (is_singular('practice')) {
+			wp_enqueue_script('practice', Assets::getJs('practice'), false, null, true);
+		}
+		else if (is_singular('partner')) {
+			wp_enqueue_script('partner', Assets::getJs('partner'), false, null, true);
+		}
 	});
 });
