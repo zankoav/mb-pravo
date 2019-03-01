@@ -42,13 +42,8 @@ $GREY: #d8d8d8;
         height: 100%;
         background-size: cover;
         background-repeat: no-repeat;
-        padding-bottom: 16rem;
         display: flex;
         align-items: center;
-
-        @include md {
-            padding-bottom: initial;
-        }
     }
 
     &__content {
