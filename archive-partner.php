@@ -5,7 +5,6 @@ $query_args = [
 	 'post_type' => 'partner',
 	 'posts_per_page' => 100,
 ];
-$query = new WP_Query($query_args);
 ?>
 	<div class="loader">
 		<div class="loader__spinner loader__spinner_egg"></div>
