@@ -3,6 +3,7 @@
 $BLACK_MIDDLE: #384443;
 
 .partner-description {
+    position: relative;
     background-image: radial-gradient(circle at 30% 0, #7a8f8d, #546160);
 
     &:before {
