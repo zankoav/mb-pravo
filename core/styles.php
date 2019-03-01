@@ -21,6 +21,9 @@
 			else if ( is_singular( 'partner' ) ) {
 				wp_enqueue_style( 'partner', Assets::getCss( 'partner' ), false, null );
 			}
+			else if ( is_singular( 'practice' ) ) {
+				wp_enqueue_style( 'practice', Assets::getCss( 'practice' ), false, null );
+			}
 
 		} );
 	} );
