@@ -33,8 +33,8 @@ $content = apply_filters('the_content', get_post_meta(get_the_id(), 'content', t
 										<div class="practice-content__row_about-information-column-subtitle">
 											<?= $sub_title; ?>
 										</div>
-										<img class="practice-content__about_row-information-column-image"
-										     src="<?= $photo; ?>" alt="partners">
+										<img class="practice-content__about_row-information-column-image js-img"
+										     data-src="<?= $photo; ?>" alt="partners">
 									</div>
 
 									<div class="practice-content__row_about-information-text">
