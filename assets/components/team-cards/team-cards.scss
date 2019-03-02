@@ -152,7 +152,11 @@ $RED: #d41319;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 2rem;
+        margin-left: 1rem;
+
+        @include sm{
+            margin-left: 2rem;
+        }
     }
 
     &__name {
