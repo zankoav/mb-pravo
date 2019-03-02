@@ -152,17 +152,7 @@ $RED: #d41319;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 3rem 0;
-
-        @include sm {
-            display: block;
-            padding: initial;
-            margin: auto 2.5rem 2.5rem 2rem;
-        }
-
-        @include m-land {
-            margin: auto 2.5rem 2.5rem;
-        }
+        margin-left: 2rem;
     }
 
     &__name {
@@ -222,6 +212,7 @@ $RED: #d41319;
         z-index: 1;
         transition: all .3s ease;
         position: relative;
+        align-self: flex-start;
 
         @include sm {
             padding: 0.7rem 2.5rem .5rem;
