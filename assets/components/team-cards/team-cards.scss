@@ -76,23 +76,17 @@ $RED: #d41319;
 
 
 .cards {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
     padding-bottom: 1rem;
     margin-left: -1rem;
-
-    @include sm {
-        margin-left: initial;
-    }
-
-    @include md {
-        display: flex;
-        flex-wrap: wrap;
-    }
+    margin-right: -1rem;
+    max-width: initial;
+    display: flex;
+    flex-wrap: wrap;
 
     &__item {
-        padding-top: 3.75rem;
+        padding: 3rem 1rem 0;
+        flex: 1 0 100%;
+        max-width: 100%;
         opacity: 0;
 
         @include md {
@@ -122,15 +116,6 @@ $RED: #d41319;
 
         @include sm {
             justify-content: initial;
-            padding-left: 4rem;
-        }
-
-        @include md {
-            padding-left: initial;
-        }
-
-        @include lg {
-            padding-left: 4rem;
         }
     }
 
