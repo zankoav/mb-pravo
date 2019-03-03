@@ -18,11 +18,9 @@ $content = apply_filters('the_content', get_post_meta(get_the_id(), 'content', t
                                 <h1 class="practice-content__row_navigation-title">Практики</h1>
                                 <div class="practice-content__row_navigation-theme">
                                     <div class="menu-left">
-                                        <div class="menu-left__active-item">Выбирете практику</div>
+                                        <div class="menu-left__active-item">Выберите практику</div>
                                         <ul class="menu-left__list">
-
                                             <?php get_template_part('/core/views/practice_list'); ?>
-
                                         </ul>
                                     </div>
                                 </div>
