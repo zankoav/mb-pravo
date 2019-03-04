@@ -12,8 +12,8 @@
             <?php get_template_part('/core/views/header_view'); ?>
             <div class="practice-content">
                 <div class="practice-content__inner">
-                    <h1 class="practice-content__row_navigation-title"><?= get_the_title(); ?></h1>
                     <div class="container">
+                        <h1 class="practice-content__row_navigation-title"><?= get_the_title(); ?></h1>
                         <div class="practice-content__row">
                             <div class="practice-content__row_navigation">
                                 <div class="practice-content__row_navigation-theme">
