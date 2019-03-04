@@ -6,7 +6,15 @@
     background-image : linear-gradient(42deg, #ececec, #c3c3c3);
 
     &__inner {
-        position : relative;
+        position    : relative;
+        padding-top : 2rem;
+
+        @include md {
+            padding-top : 3rem;
+        }
+        @include lg {
+            padding-top : 4rem;
+        }
 
         &:before {
             content             : "";
@@ -45,7 +53,7 @@
             flex-direction : row;
         }
 
-        &_about-information-column-subtitle-uppercase{
+        &_about-information-column-subtitle-uppercase {
             text-transform : uppercase;
         }
     }
@@ -71,19 +79,18 @@
     }
 
     &__row_navigation-title {
-        font-size   : 32px;
-        color       : #718886;
-        line-height : 48px;
-        padding     : 2rem 0 2rem;
+        font-size      : 32px;
+        color          : #718886;
+        line-height    : 48px;
+        padding-bottom : 2rem;
 
         @include md {
-            padding   : 3rem 0 2rem;
             font-size : 42px;
         }
 
         @include lg {
-            padding   : 4rem 0 3rem;
-            font-size : 48px;
+            padding-bottom : 3rem;
+            font-size      : 48px;
         }
 
     }
@@ -93,11 +100,11 @@
         display : none;
 
         @include md {
-            display        : block;
-            font-size      : 32px;
-            line-height    : 48px;
-            color          : #718886;
-            padding : 1rem 0;
+            display     : block;
+            font-size   : 32px;
+            line-height : 48px;
+            color       : #718886;
+            padding     : 1rem 0;
         }
 
     }
@@ -116,6 +123,8 @@
         font-size   : 18px;
         line-height : 1;
         color       : #718886;
+        margin-top  : 2rem;
+
         @include sm {
             font-size   : 24px;
             line-height : 32px;

@@ -13,10 +13,10 @@
             <div class="practice-content">
                 <div class="practice-content__inner">
                     <div class="container">
-                        <h2 class="practice-content__row_navigation-title">Практики:</h2>
                         <div class="practice-content__row">
                             <div class="practice-content__row_navigation">
                                 <div class="practice-content__row_navigation-theme">
+                                    <h2 class="practice-content__row_navigation-title">Практики:</h2>
                                     <div class="menu-left">
                                         <div class="menu-left__active-item">Выберите практику</div>
                                         <ul class="menu-left__list">
