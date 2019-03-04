@@ -1,8 +1,8 @@
 <?php
-get_header();
-$sub_title = get_post_meta(get_the_ID(), 'sub_title', true);
-$photo = get_post_meta(get_the_ID(), 'photo', true);
-$content = apply_filters('the_content', get_post_meta(get_the_id(), 'content', true));
+    get_header();
+    $sub_title = get_post_meta(get_the_ID(), 'sub_title', true);
+    $photo     = get_post_meta(get_the_ID(), 'photo', true);
+    $content   = apply_filters('the_content', get_post_meta(get_the_id(), 'content', true));
 ?>
     <div class="loader">
         <div class="loader__spinner loader__spinner_egg"></div>
@@ -12,11 +12,12 @@ $content = apply_filters('the_content', get_post_meta(get_the_id(), 'content', t
             <?php get_template_part('/core/views/header_view'); ?>
             <div class="practice-content">
                 <div class="practice-content__inner">
+                    <h1 class="practice-content__row_navigation-title"><?= get_the_title(); ?></h1>
                     <div class="container">
                         <div class="practice-content__row">
                             <div class="practice-content__row_navigation">
-                                <h1 class="practice-content__row_navigation-title">Практики</h1>
                                 <div class="practice-content__row_navigation-theme">
+                                    <h2 class="practice-content__row_navigation-subtitle">Практики:</h2>
                                     <div class="menu-left">
                                         <div class="menu-left__active-item">Выберите практику</div>
                                         <ul class="menu-left__list">
@@ -52,4 +53,4 @@ $content = apply_filters('the_content', get_post_meta(get_the_id(), 'content', t
         </div>
     </div>
 <?php
-get_footer();
+    get_footer();
