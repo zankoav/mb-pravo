@@ -5,8 +5,9 @@ $C_SPINNER: #000;
     $SVG_LOADER_DEFAULT : './images/default.svg';
     $SVG_LOADER_MTB : './images/mtb.svg';
     $SVG_LOADER_EGG : './images/egg.svg';
+    $SVG_LOADER_MBPRAVO : './images/mbpravo.svg';
 
-    $LOADER: $SVG_LOADER_MTB;
+    $LOADER: $SVG_LOADER_MBPRAVO;
 
     .body_overflow_hidden {
         overflow: hidden;

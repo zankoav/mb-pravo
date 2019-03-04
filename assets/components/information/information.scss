@@ -13,6 +13,7 @@ $GREY_DARK: #718886;
         background-image: url("./../../images/p404.svg");
         background-repeat: no-repeat;
         background-position: 10% 250%;
+        opacity: 0.95;
 
         @include sm {
             background-position: 0 -54%;

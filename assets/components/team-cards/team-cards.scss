@@ -1,259 +1,261 @@
 @import "./../../common/constants";
 
-$GREY_DARK: #4a4a4a;
-$GREY_MIDDLE: #718886;
-$RED: #d41319;
+$GREY_DARK : #4a4a4a;
+$GREY_MIDDLE : #718886;
+$RED : #d41319;
 
 .team-cards {
 
     &__inner {
-        background-image: linear-gradient(22deg, #ececec, #d3d3d3 66%, #c3c3c3);
-        position: relative;
+        background-image : linear-gradient(22deg, #ececec, #d3d3d3 66%, #c3c3c3);
+        position         : relative;
 
         &:before {
-            content: '';
-            background-image: radial-gradient(circle at 49% 52%, #ffffff, #c3c3c3);
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            background-repeat: no-repeat;
-            background-size: contain;
+            content           : '';
+            background-image  : radial-gradient(circle at 49% 52%, #ffffff, #c3c3c3);
+            opacity           : 0.9;
+            width             : 100%;
+            height            : 100%;
+            position          : absolute;
+            top               : 0;
+            background-repeat : no-repeat;
+            background-size   : contain;
         }
 
         @include sm {
-            background-image: linear-gradient(11deg, #ececec, #c3c3c3);
+            background-image : linear-gradient(11deg, #ececec, #c3c3c3);
         }
 
         @include md {
-            background-image: linear-gradient(26deg, #ececec, #c3c3c3);
+            background-image : linear-gradient(26deg, #ececec, #c3c3c3);
         }
 
         @include lg {
-            background-image: linear-gradient(32deg, #ececec, #c3c3c3);
+            background-image : linear-gradient(32deg, #ececec, #c3c3c3);
         }
     }
 
     &__content {
-        padding-top: 3.75rem;
+        padding-top : 3.75rem;
     }
 
     &__title {
-        color: $GREY_MIDDLE;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 27px;
-        line-height: 1;
+        color       : $GREY_MIDDLE;
+        font-family : 'Open Sans', sans-serif;
+        font-size   : 27px;
+        line-height : 1;
 
         @include sm {
-            font-size: 48px;
-            padding-left: 3.25rem;
+            font-size    : 48px;
+            padding-left : 3.25rem;
         }
 
         &:after {
-            display: block;
-            content: '';
-            height: 1px;
-            margin-top: 1.25rem;
-            margin-left: -3.25rem;
-            border: 1px solid $GREY_MIDDLE;
-            width: 90%;
+            display     : block;
+            content     : '';
+            height      : 1px;
+            margin-top  : 1.25rem;
+            margin-left : -3.25rem;
+            border      : 1px solid $GREY_MIDDLE;
+            width       : 90%;
 
             @include sm {
-                margin-top: 1.75rem;
-                width: 65%;
+                margin-top : 1.75rem;
+                width      : 65%;
             }
 
             @include md {
-                width: 50%;
+                width : 50%;
             }
 
             @include lg {
-                width: 40%;
+                width : 40%;
             }
         }
     }
 }
 
-
 .cards {
-    padding-bottom: 1rem;
-    margin-left: -1rem;
-    margin-right: -1rem;
-    max-width: initial;
-    display: flex;
-    flex-wrap: wrap;
+    margin-left  : -1rem;
+    margin-right : -1rem;
+    max-width    : initial;
+    display      : flex;
+    flex-wrap    : wrap;
 
     &__item {
-        padding: 3rem 1rem 0;
-        flex: 1 0 100%;
-        max-width: 100%;
-        opacity: 0;
+        padding   : 3rem 1rem 0;
+        flex      : 1 0 100%;
+        max-width : 100%;
+        opacity   : 0;
 
         @include md {
-            flex: 1 0 50%;
-            max-width: 50%;
+            flex      : 1 0 50%;
+            max-width : 50%;
         }
     }
 
     &__item-active {
-        animation: animationItem 1s;
-        animation-fill-mode: forwards;
+        animation           : animationItem 1s;
+        animation-fill-mode : forwards;
     }
 
     &__content {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        background-size: contain;
-        background-repeat: no-repeat;
-        position: relative;
-        background-position: bottom;
-        background-image: url("./../../images/shadow.svg");
+        display             : flex;
+        flex-direction      : row;
+        justify-content     : flex-end;
+        background-size     : contain;
+        background-repeat   : no-repeat;
+        position            : relative;
+        background-position : bottom;
+        background-image    : url("./../../images/shadow.svg");
 
         @include m-land {
-            justify-content: initial;
+            justify-content : initial;
         }
 
         @include sm {
-            justify-content: initial;
+            justify-content : initial;
         }
     }
 
     &__partner {
-        display: flex;
-        flex: 1 0 75%;
-        max-width: 75%;
-        position: relative;
-        left: 0;
+        display   : flex;
+        flex      : 1 0 75%;
+        max-width : 75%;
+        position  : relative;
+        left      : 0;
 
         @include sm {
-            flex: 1 0 42%;
-            max-width: 42%;
-            position: relative;
+            flex      : 1 0 42%;
+            max-width : 42%;
+            position  : relative;
         }
 
         @include m-land {
-            flex: 1 0 40%;
-            max-width: 40%;
+            flex      : 1 0 40%;
+            max-width : 40%;
         }
 
         @include md {
-            flex: 1 0 50%;
-            max-width: 50%;
+            flex      : 1 0 50%;
+            max-width : 50%;
         }
     }
 
     &__partner-img {
-        width: 100%;
-        height: 100%;
+        width  : 100%;
+        height : 100%;
     }
 
     &__wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 1rem;
+        display         : flex;
+        flex-direction  : column;
+        justify-content : center;
+        margin-left     : 1rem;
 
-        @include sm{
-            margin-left: 2rem;
+        @include sm {
+            margin-left : 2rem;
         }
     }
 
     &__name {
-        font-size: 20px;
-        font-family: 'Open Sans', sans-serif;
-        color: $GREY_DARK;
+        font-size   : 20px;
+        font-family : 'Open Sans', sans-serif;
+        color       : $GREY_DARK;
 
         @include sm {
-            font-size: 25px;
-            width: 54%;
+            font-size : 25px;
+            width     : 54%;
         }
 
         &:after {
-            display: block;
-            content: '';
-            height: 1px;
-            margin-top: 1.75rem;
-            margin-bottom: 1rem;
-            left: 0;
-            border: 1px solid $GREY_MIDDLE;
-            width: 70%;
+            display       : block;
+            content       : '';
+            height        : 1px;
+            margin-top    : 1.75rem;
+            margin-bottom : 1rem;
+            left          : 0;
+            border        : 1px solid $GREY_MIDDLE;
+            width         : 70%;
 
             @include sm {
-                margin-top: 1.75rem;
-                width: 60%;
+                margin-top : 1.75rem;
+                width      : 60%;
             }
 
             @include md {
-                width: 100%;
+                width : 100%;
             }
 
             @include lg {
-                width: 80%;
+                width : 80%;
             }
         }
     }
 
     &__description {
-        font-size: 14px;
-        font-family: 'Open Sans', sans-serif;
-        color: $GREY_DARK;
-        line-height: 1.14;
-        padding-bottom: 2.5rem;
+        font-size      : 14px;
+        font-family    : 'Open Sans', sans-serif;
+        color          : $GREY_DARK;
+        line-height    : 1.14;
+        padding-bottom : 2.5rem;
 
         @include sm {
-            padding-bottom: 3rem;
+            padding-bottom : 3rem;
         }
     }
 
     &__more {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 12px;
-        text-transform: uppercase;
-        padding: 0.7rem 1.25rem .5rem;
-        color: $GREY_MIDDLE;
-        border: 1px solid $GREY_MIDDLE;
-        z-index: 1;
-        transition: all .3s ease;
-        position: relative;
-        align-self: flex-start;
+        font-family    : 'Open Sans', sans-serif;
+        font-size      : 12px;
+        text-transform : uppercase;
+        padding        : 0.7rem 1.25rem .5rem;
+        color          : $GREY_MIDDLE;
+        border         : 1px solid $GREY_MIDDLE;
+        z-index        : 1;
+        transition     : all .3s ease;
+        position       : relative;
+        align-self     : flex-start;
 
         @include sm {
-            padding: 0.7rem 2.5rem .5rem;
+            padding : 0.7rem 2.5rem .5rem;
         }
 
         &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0;
-            height: 100%;
-            background: $RED;
-            transition: all .3s ease;
-            z-index: -1;
+            content    : '';
+            position   : absolute;
+            top        : 0;
+            left       : 0;
+            width      : 0;
+            height     : 100%;
+            background : $RED;
+            transition : all .3s ease;
+            z-index    : -1;
         }
 
-        &:hover:before {
-            width: 100%;
+        @include lg {
+
+            &:hover {
+                color  : $WHITE;
+                cursor : pointer;
+
+                &:before {
+                    width : 100%;
+                }
+            }
         }
 
-        &:hover {
-            color: $WHITE;
-            cursor: pointer;
-        }
     }
 }
 
-
 @keyframes animationItem {
     0% {
-        transform: translateY(100px);
-        opacity: 0;
+        transform : translateY(100px);
+        opacity   : 0;
     }
 
     100% {
-        transform: translateY(0);
-        opacity: 1;
+        transform : translateY(0);
+        opacity   : 1;
     }
 }

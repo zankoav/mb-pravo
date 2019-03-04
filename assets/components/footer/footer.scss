@@ -4,6 +4,8 @@ $GREY_LIGHT: #e6e7e8;
 $GREY: #718886;
 
 .footer {
+    position: relative;
+    z-index: 1;
 
     &__bg-color {
         background-color: $GREY_LIGHT;
@@ -12,13 +14,8 @@ $GREY: #718886;
     &__inner {
         display: flex;
         flex-direction: column;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-
-        @include sm {
-            padding-top: 1rem;
-            padding-bottom: .5rem;
-        }
+        padding-top: 4rem;
+        padding-bottom: 3rem;
     }
 
     &__content {

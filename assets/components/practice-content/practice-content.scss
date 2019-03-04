@@ -1,142 +1,145 @@
 @import "./../../common/constants";
 
-.practice-content{
+.practice-content {
 
-  padding-bottom: 90px;
-  background-image: linear-gradient(42deg, #ececec, #c3c3c3);
+    padding-bottom   : 90px;
+    background-image : linear-gradient(42deg, #ececec, #c3c3c3);
 
-  &__inner{
-    position: relative;
-    &:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-image: url("./../../images/sh.svg");
-      background-repeat: no-repeat;
-      background-size: 216% 49%;
-      background-position: 59% -20%;
+    &__inner {
+        position : relative;
 
-      @include sm {
-        background-position: 0 -54%;
-        background-size: 64% 100%;
-      }
+        &:before {
+            content             : "";
+            position            : absolute;
+            width               : 100%;
+            height              : 100%;
+            background-image    : url("./../../images/sh.svg");
+            opacity             : 0.9;
+            background-repeat   : no-repeat;
+            background-size     : 216% 49%;
+            background-position : 59% -20%;
 
-      @include md {
-        background-position: 0 -80%;
-        background-size: 64% 100%;
-      }
+            @include sm {
+                background-position : 0 -54%;
+                background-size     : 64% 100%;
+            }
 
-      @include lg {
-        background-size: 64% 100%;
-      }
+            @include md {
+                background-position : 0 -80%;
+                background-size     : 64% 100%;
+            }
+
+            @include lg {
+                background-size : 64% 100%;
+            }
+        }
+
     }
 
+    &__row {
+        display        : flex;
+        flex-wrap      : wrap;
+        flex-direction : column;
+        max-width      : initial;
+        @include md {
+            flex-direction : row;
+        }
 
-  }
-
-
-
-
-  &__row{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    max-width: initial;
-    @include md{
-      flex-direction: row;
     }
 
-
-  }
-
-  &__row_navigation{
-      @include md{
-        max-width: 376px;
-        flex: 1 0 376px;
-      }
-  }
-
-
-  &__row_about-information-column{
-    position: relative;
-
-  }
-
-  &__row_about{
-    @include md{
-      flex: 1;
-      width: 100%;
-      padding-left: 8px;
+    &__row_navigation {
+        @include md {
+            max-width : 376px;
+            flex      : 1 0 376px;
+        }
     }
-  }
 
-  &__row_navigation-title{
-    font-size: 32px;
-    line-height: 48px;
-    color: #718886;
-    padding-top: 60px;
-      @include sm{
-        font-size: 48px;
-        padding-top: 62px;
-      }
-    @include md{
-      font-size: 48px;
-      padding-top: 62px;
+    &__row_about-information-column {
+        position : relative;
+
     }
-  }
 
-  &__row_navigation-theme{
-    margin-top: 36px;
-    margin-bottom: 50px;
-      @include sm{
-        margin-top: 20px;
-        margin-bottom: 40px;
-      }
-      @include md{
-        margin-top: 78px;
-        margin-bottom: 0px;
-      }
-  }
+    &__row_about {
+        @include md {
+            flex         : 1;
+            width        : 100%;
+            padding-left : 56px;
+        }
+    }
 
-  &__row_about-information-column-subtitle{
-    font-size: 18px;
-    line-height: 1;
-    color: #718886;
-      @include sm{
-        font-size: 24px;
-        line-height: 32px;
-      }
-      @include md{
-        padding-top: 80px;
-      }
-  }
+    &__row_navigation-title {
+        font-size   : 32px;
+        color       : #718886;
+        line-height : 48px;
+        padding     : 2rem 0 2rem;
 
-  &__about_row-information-column-image{
-    width:100%;
-    height: auto;
-    margin-top: 50px;
-    display: block;
-      @include sm{
-        margin-top: 40px;
-      }
-      @include sm{
-        margin-top: 70px;
-      }
-  }
+        @include md {
+            padding   : 3rem 0 2rem;
+            font-size : 42px;
+        }
 
+        @include lg {
+            padding   : 4rem 0 3rem;
+            font-size : 48px;
+        }
 
+    }
 
-  &__row_about-information{
-  }
+    &__row_navigation-subtitle {
 
+        display : none;
 
+        @include md {
+            display        : block;
+            font-size      : 32px;
+            line-height    : 48px;
+            color          : #718886;
+            padding-bottom : 1rem;
+        }
 
-  &__row_about-information-text{
-    margin-top: 50px;
-      @include sm{
-        margin-top: 58px;
-      }
-  }
+    }
+
+    &__row_navigation-theme {
+        margin-bottom : 50px;
+        @include sm {
+            margin-bottom : 40px;
+        }
+        @include md {
+            margin-bottom : 0px;
+        }
+    }
+
+    &__row_about-information-column-subtitle {
+        font-size   : 18px;
+        line-height : 1;
+        color       : #718886;
+        @include sm {
+            font-size   : 24px;
+            line-height : 32px;
+        }
+    }
+
+    &__about_row-information-column-image {
+        width      : 100%;
+        height     : auto;
+        margin-top : 50px;
+        display    : block;
+        @include sm {
+            margin-top : 40px;
+        }
+        @include sm {
+            margin-top : 70px;
+        }
+    }
+
+    &__row_about-information {
+    }
+
+    &__row_about-information-text {
+        margin-top : 50px;
+        @include sm {
+            margin-top : 58px;
+        }
+    }
 
 }

@@ -1,247 +1,245 @@
 @import "./../../common/constants";
 
-$BLACK_MIDDLE: #384443;
+$BLACK_MIDDLE : #384443;
 
 .partner-description {
-    position: relative;
-    background-image: radial-gradient(circle at 30% 0, #7a8f8d, #546160);
+    position         : relative;
+    background-image : radial-gradient(circle at 30% 0, #7a8f8d, #546160);
 
     &:before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-image: url("./../../images/shadow-big.svg");
-        background-repeat: no-repeat;
-        background-position: 100% 100%;
-        background-size: 114% 150%;
-        opacity: .3;
+        content             : "";
+        position            : absolute;
+        width               : 100%;
+        height              : 100%;
+        background-image    : url("./../../images/shadow-big.svg");
+        background-repeat   : no-repeat;
+        background-position : 100% 100%;
+        background-size     : 114% 150%;
+        opacity             : .15;
 
         @include sm {
-            background-position: 0 0;
-            background-size: 38% 26%;
+            background-position : 0 0;
+            background-size     : 38% 26%;
         }
 
         @include md {
-            background-position: -10% 0;
-            background-size: 36% 40%;
+            background-position : -25% -25%;
+            background-size     : 50% 50%;
         }
 
         @include hd {
-            background-position: 10% 0;
-            background-size: 34% 34%;
+            background-position : 0 -25%;
         }
 
         @include xhd {
-            background-position: 22% -4%;
-            background-size: 26% 26%;
+            background-position : 10% -25%;
+
         }
     }
 
     &__content {
-        height: 100%;
+        height : 100%;
 
         @include sm {
-            display: flex;
-            flex-direction: column;
-            padding: 0 3rem;
+            display        : flex;
+            flex-direction : column;
+            padding        : 0 3rem;
         }
 
         @include md {
-            flex-direction: initial;
-            padding: initial;
+            flex-direction : initial;
+            padding        : initial;
         }
 
         @include lg {
-            padding-left: 3rem;
+            padding-left : 3rem;
         }
     }
 
     &__inner {
-        display: flex;
-        flex-direction: column;
-        padding-top: 3rem;
+        display        : flex;
+        flex-direction : column;
+        padding-top    : 3rem;
 
         @include sm {
-            flex-direction: initial;
-            margin-top: 3rem;
-            padding-top: initial;
+            flex-direction : initial;
+            margin-top     : 3rem;
+            padding-top    : initial;
         }
 
         @include md {
-            flex-direction: column;
-            max-width: 300px;
-            flex: 1 0 300px;
-            margin-top: 4.5rem;
+            flex-direction : column;
+            max-width      : 300px;
+            flex           : 1 0 300px;
+            margin-top     : 4.5rem;
         }
     }
 
     &__tab {
-        display: flex;
-        align-items: center;
-        padding-bottom: 1rem;
-        color: $BLACK_MIDDLE;
-        cursor: pointer;
-        transition: all .4s;
-        position: relative;
+        display        : flex;
+        align-items    : center;
+        padding-bottom : 1rem;
+        color          : $BLACK_MIDDLE;
+        cursor         : pointer;
+        transition     : all .4s;
+        position       : relative;
 
         @include sm {
-            padding-right: 2rem;
-            padding-bottom: initial;
-            position: initial;
+            padding-right  : 2rem;
+            padding-bottom : initial;
+            position       : initial;
         }
 
         @include md {
-            padding-right: initial;
-            padding-bottom: 1rem;
+            padding-right  : initial;
+            padding-bottom : 1rem;
         }
 
         &:hover {
             .partner-description__tab-text:after {
-                width: 100%;
-                max-width: initial;
+                width     : 100%;
+                max-width : initial;
 
                 @include sm {
-                    width: 100%;
+                    width : 100%;
                 }
             }
         }
 
         &_active {
-            color: $WHITE;
+            color : $WHITE;
 
             .partner-description__tab-text {
                 &:after {
-                    border-color: $WHITE;
-                    width: 100%;
+                    border-color : $WHITE;
+                    width        : 100%;
                 }
             }
         }
     }
 
     &__tab-number {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 64px;
-        line-height: 1.05;
-        margin-right: 1.5rem;
-        flex-shrink: 0;
+        font-family  : 'Open Sans', sans-serif;
+        font-size    : 64px;
+        line-height  : 1.05;
+        margin-right : 1.5rem;
+        flex-shrink  : 0;
     }
 
     &__tab-text {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 13px;
-        text-transform: uppercase;
-        flex: 1;
+        font-family    : 'Open Sans', sans-serif;
+        font-size      : 13px;
+        text-transform : uppercase;
+        flex           : 1;
         @include sm {
-            position: relative;
-            font-size: 15px
+            position  : relative;
+            font-size : 15px
         }
 
         &:after {
-            display: block;
-            content: '';
-            height: 1px;
-            border: 1px solid $BLACK_MIDDLE;
-            max-width: initial;
-            margin-top: 1.5rem;
-            width: 50%;
-            transition: all .5s ease-out;
-            position: absolute;
-            left: 0;
+            display    : block;
+            content    : '';
+            height     : 1px;
+            border     : 1px solid $BLACK_MIDDLE;
+            max-width  : initial;
+            margin-top : 1.5rem;
+            width      : 50%;
+            transition : all .5s ease-out;
+            position   : absolute;
+            left       : 0;
 
             @include sm {
-                margin-left: initial;
-                left: initial;
+                margin-left : initial;
+                left        : initial;
             }
         }
     }
 
     &__experience-wrapper {
-        margin-top: 3rem;
-        display: none;
-        animation: showContent .4s;
+        margin-top : 3rem;
+        display    : none;
+        animation  : showContent .4s;
 
         @include md {
-            margin-top: 4.5rem;
-            margin-left: 5rem;
+            margin-top  : 4.5rem;
+            margin-left : 5rem;
         }
 
         @include lg {
-            margin-left: 3rem;
+            margin-left : 3rem;
         }
 
         &_active {
-            display: block;
+            display : block;
         }
     }
 
     &__title {
-        color: $WHITE;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 24px;
-        text-transform: uppercase;
+        color          : $WHITE;
+        font-family    : 'Open Sans', sans-serif;
+        font-size      : 24px;
+        text-transform : uppercase;
 
         @include sm {
-            font-size: 29px;
-            padding-bottom: 1.25rem;
+            font-size      : 29px;
+            padding-bottom : 1.25rem;
         }
 
         @include md {
-            font-size: 28px;
+            font-size : 28px;
         }
 
         @include lg {
-            font-size: 37px;
+            font-size : 37px;
         }
     }
 
     .editor-content {
-        color: $WHITE;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 14px;
-        line-height: 1.14;
+        color       : $WHITE;
+        font-family : 'Open Sans', sans-serif;
+        font-size   : 14px;
+        line-height : 1.14;
 
         ul {
-            list-style-type: none;
-            padding-left: initial;
-            margin: 2rem 0;
+            list-style-type : none;
+            padding-left    : initial;
+            margin          : 2rem 0;
 
             li {
-                list-style: none;
-                display: flex;
-                padding-bottom: 1rem;
+                list-style     : none;
+                display        : flex;
+                padding-bottom : 1rem;
 
                 @include sm {
-                    padding-bottom: 2rem;
-                    margin-left: -.75rem;
+                    padding-bottom : 2rem;
+                    margin-left    : -.75rem;
                 }
 
                 @include md {
-                    margin-left: initial;
+                    margin-left : initial;
                 }
 
                 &:before {
-                    content: '';
-                    display: inline-block;
-                    width: 4px;
-                    height: 4px;
-                    margin-top: .5rem;
-                    margin-right: .5rem;
-                    background: url('./../../images/rectangle-red.svg');
-                    flex-shrink: 0;
+                    content      : '';
+                    display      : inline-block;
+                    width        : 4px;
+                    height       : 4px;
+                    margin-top   : .5rem;
+                    margin-right : .5rem;
+                    background   : url('./../../images/rectangle-red.svg');
+                    flex-shrink  : 0;
                 }
             }
         }
     }
 }
 
-
 @keyframes showContent {
     0% {
-        opacity: 0;
+        opacity : 0;
     }
 
     100% {
-        opacity: 1;
+        opacity : 1;
     }
 }
