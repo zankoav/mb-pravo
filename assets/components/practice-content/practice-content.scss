@@ -45,6 +45,9 @@
             flex-direction : row;
         }
 
+        &_about-information-column-subtitle-uppercase{
+            text-transform : uppercase;
+        }
     }
 
     &__row_navigation {
@@ -94,7 +97,7 @@
             font-size      : 32px;
             line-height    : 48px;
             color          : #718886;
-            padding-bottom : 1rem;
+            padding : 1rem 0;
         }
 
     }

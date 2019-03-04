@@ -13,11 +13,10 @@
             <div class="practice-content">
                 <div class="practice-content__inner">
                     <div class="container">
-                        <h1 class="practice-content__row_navigation-title"><?= get_the_title(); ?></h1>
+                        <h2 class="practice-content__row_navigation-title">Практики:</h2>
                         <div class="practice-content__row">
                             <div class="practice-content__row_navigation">
                                 <div class="practice-content__row_navigation-theme">
-                                    <h2 class="practice-content__row_navigation-subtitle">Практики:</h2>
                                     <div class="menu-left">
                                         <div class="menu-left__active-item">Выберите практику</div>
                                         <ul class="menu-left__list">
@@ -29,13 +28,16 @@
                             <div class="practice-content__row_about">
                                 <div class="practice-content__row_about-information">
                                     <div class="practice-content__row_about-information-column">
-                                        <div class="practice-content__row_about-information-column-subtitle">
-                                            <?= $sub_title; ?>
-                                        </div>
+                                        <h1 class="practice-content__row_about-information-column-subtitle practice-content__row_about-information-column-subtitle-uppercase">
+                                            <?= get_the_title(); ?>
+                                        </h1>
                                         <?php if (!empty($photo)): ?>
                                             <img class="practice-content__about_row-information-column-image js-img"
                                                  data-src="<?= $photo; ?>" alt="partners">
                                         <?php endif; ?>
+                                    </div>
+                                    <div class="practice-content__row_about-information-column-subtitle">
+                                        <?= $sub_title; ?>
                                     </div>
 
                                     <div class="practice-content__row_about-information-text">
