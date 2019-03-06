@@ -1,5 +1,8 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea
+vendor
+composer.json
+composer.lock
 node_modules
 package-lock.json
 yarn.lock
