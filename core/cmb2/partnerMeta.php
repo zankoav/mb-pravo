@@ -74,7 +74,7 @@ function partner_options_metabox()
 	$prof_experience ->add_field(array(
 		'name' => esc_html__('Заголовок списка', THEME_NAME),
 		'id' => 'prof_experience_title',
-		'type' => 'text',
+		'type' => 'textarea_small',
 	));
 	$prof_experience ->add_field(array(
 		 'name' => esc_html__('Профессиональный опыт адвоката ', THEME_NAME),
