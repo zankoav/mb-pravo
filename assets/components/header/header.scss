@@ -103,6 +103,10 @@ $GREY_ULTRA: #f9f9f9;
             }
         }
 
+        &.current-menu-item{
+            color : $RED;
+        }
+
         @include lg {
             padding-left: 4rem;
             padding-bottom: initial;

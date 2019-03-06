@@ -39,7 +39,6 @@
                                     <div class="practice-content__row_about-information-column-subtitle">
                                         <?= $sub_title; ?>
                                     </div>
-
                                     <div class="practice-content__row_about-information-text">
                                         <?= wpautop($content); ?>
                                     </div>
