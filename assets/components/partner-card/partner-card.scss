@@ -1,308 +1,309 @@
 @import "./../../common/constants";
 
-$GREY: #718886;
-$GREY_DARK: #7b7b7b;
-$GREY_MIDDLE: #878787;
+$GREY : #718886;
+$GREY_DARK : #7b7b7b;
+$GREY_MIDDLE : #878787;
 
 .partner-card {
-    background-image: linear-gradient(84deg, #ececec, #dedede);
+    background-image : linear-gradient(84deg, #ececec, #dedede);
 
     &:before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-image: url("./../../images/shadow-big.svg");
-        background-repeat: no-repeat;
-        background-position: 10% 250%;
-        opacity: 0.95;
+        content             : "";
+        position            : absolute;
+        width               : 100%;
+        height              : 100%;
+        background-image    : url("./../../images/shadow-big.svg");
+        background-repeat   : no-repeat;
+        background-position : 10% 250%;
+        opacity             : 0.95;
 
         @include sm {
-            background-position: 0 0;
-            background-size: 180% 70%;
+            background-position : 0 0;
+            background-size     : 180% 70%;
         }
 
         @include md {
-            background-position: 0 40%;
-            background-size: 92% 80%;
+            background-position : 0 40%;
+            background-size     : 92% 80%;
         }
 
         @include lg {
-            background-position: 44% 87%;
-            background-size: 150% 150%;
+            background-position : 44% 87%;
+            background-size     : 150% 150%;
         }
 
         @include xl {
-            background-position: 0 0;
+            background-position : 0 0;
         }
 
         @include xll {
-            background-size: 100% 70%;
+            background-size : 100% 70%;
         }
 
         @include hd {
-            background-size: 106% 56%;
+            background-size : 106% 56%;
         }
 
         @include xhd {
-            background-size: 104% 46%;
+            background-size : 104% 46%;
         }
     }
 
     &__backwards {
-        padding-top: 2.5rem;
+        padding-top : 2.5rem;
     }
 
     &__inner {
-        position: relative;
-        display: flex;
-        flex-direction: column-reverse;
+        position       : relative;
+        display        : flex;
+        flex-direction : column-reverse;
 
         @include sm {
-            flex-direction: row;
-            padding-top: 5rem;
+            flex-direction : row;
+            padding-top    : 5rem;
         }
 
         @include lg {
-            padding-top: 2rem;
+            padding-top : 2rem;
         }
     }
 
     &__partner {
         @include sm {
-            flex: 1 0 47%;
-            max-width: 47%;
+            align-self : flex-end;
+            flex       : 1 0 47%;
+            max-width  : 47%;
         }
 
         @include md {
-            flex: 1 0 36%;
-            max-width: 36%;
+            flex      : 1 0 36%;
+            max-width : 36%;
         }
 
         @include lg {
-            flex: 1 0 28%;
-            max-width: 28%;
+            flex      : 1 0 28%;
+            max-width : 28%;
         }
     }
 
     &__partner-img {
-        width: 100%;
-        display: block;
+        width   : 100%;
+        display : block;
     }
 
     &__wrapper {
         @include sm {
-            padding-left: 1rem;
+            padding-left : 1rem;
         }
 
         @include md {
-            padding-left: 4rem;
-            flex: 1 0 55%;
-            max-width: 55%;
+            padding-left : 4rem;
+            flex         : 1 0 55%;
+            max-width    : 55%;
         }
 
         @include lg {
-            padding-left: 6rem;
+            padding-left : 6rem;
         }
     }
 
     &__title {
-        color: $GREY;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 32px;
-        line-height: 1;
-        padding-top: 1.25rem;
-        padding-bottom: 1.25rem;
-        width: 50%;
+        color          : $GREY;
+        font-family    : 'Open Sans', sans-serif;
+        font-size      : 32px;
+        line-height    : 1;
+        padding-top    : 1.25rem;
+        padding-bottom : 1.25rem;
+        width          : 50%;
 
         @include sm {
-            font-size: 48px;
+            font-size : 48px;
         }
     }
 
     &__position {
-        color: $GREY_DARK;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 18px;
+        color       : $GREY_DARK;
+        font-family : 'Open Sans', sans-serif;
+        font-size   : 18px;
 
         &:after {
-            display: block;
-            content: '';
-            height: 1px;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            border: 1px solid $GREY;
-            width: 90%;
+            display       : block;
+            content       : '';
+            height        : 1px;
+            margin-top    : 1rem;
+            margin-bottom : 1rem;
+            border        : 1px solid $GREY;
+            width         : 90%;
 
             @include sm {
-                margin-top: 1rem;
-                margin-bottom: 1rem;
-                margin-left: initial;
-                width: 71%;
+                margin-top    : 1rem;
+                margin-bottom : 1rem;
+                margin-left   : initial;
+                width         : 71%;
             }
 
             @include md {
-                width: 64%;
+                width : 64%;
             }
 
             @include lg {
-                width: 100%;
+                width : 100%;
             }
         }
 
         @include sm {
-            font-size: 20px;
+            font-size : 20px;
         }
     }
 
     &__date {
-        color: $GREY_DARK;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 16px;
-        padding-bottom: 1.25rem;
+        color          : $GREY_DARK;
+        font-family    : 'Open Sans', sans-serif;
+        font-size      : 16px;
+        padding-bottom : 1.25rem;
 
         @include sm {
-            font-size: 14px;
+            font-size : 14px;
         }
 
         @include md {
-            padding-bottom: 2rem;
+            padding-bottom : 2rem;
         }
     }
 
     &__specializations {
-        color: $GREY_DARK;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 16px;
-        font-weight: bold;
-        line-height: 1.25;
-        padding-bottom: 1.25rem;
+        color          : $GREY_DARK;
+        font-family    : 'Open Sans', sans-serif;
+        font-size      : 16px;
+        font-weight    : bold;
+        line-height    : 1.25;
+        padding-bottom : 1.25rem;
 
         @include sm {
-            font-size: 14px;
-            line-height: 1.43;
+            font-size   : 14px;
+            line-height : 1.43;
         }
     }
 
     &__specializations-list {
-        padding-bottom: 1.25rem;
+        padding-bottom : 1.25rem;
 
         @include md {
-            columns: 2;
-            padding-bottom: 2.75rem;
+            columns        : 2;
+            padding-bottom : 2.75rem;
         }
     }
 
     &__specialization {
-        color: $GREY_DARK;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 16px;
-        line-height: 1.25;
-        padding-left: .75rem;
-        position: relative;
+        color        : $GREY_DARK;
+        font-family  : 'Open Sans', sans-serif;
+        font-size    : 16px;
+        line-height  : 1.25;
+        padding-left : .75rem;
+        position     : relative;
 
         &:before {
-            content: url("./../../images/rectangle.svg");
-            position: absolute;
-            top: -8%;
-            left: 0;
+            content  : url("./../../images/rectangle.svg");
+            position : absolute;
+            top      : -8%;
+            left     : 0;
         }
 
         @include sm {
-            font-size: 14px;
-            line-height: 1.43;
+            font-size   : 14px;
+            line-height : 1.43;
         }
     }
 
     &__contacts {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 1.25rem;
+        display        : flex;
+        flex-direction : column;
+        padding-bottom : 1.25rem;
     }
 
     &__phone {
-        color: $GREY;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 14px;
+        color       : $GREY;
+        font-family : 'Open Sans', sans-serif;
+        font-size   : 14px;
     }
 
     &__phone-img {
-        padding-right: 1rem;
+        padding-right : 1rem;
     }
 
     &__email {
-        color: $GREY;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 14px;
+        color       : $GREY;
+        font-family : 'Open Sans', sans-serif;
+        font-size   : 14px;
     }
 
     &__email-img {
-        padding-right: 1rem;
+        padding-right : 1rem;
     }
 
     &__buttons {
-        position: absolute;
-        right: 0;
-        top: -4%;
+        position : absolute;
+        right    : 0;
+        top      : -4%;
 
         @include sm {
-            top: -6%;
+            top : -6%;
         }
 
         @include md {
-            top: 34%;
+            top : 34%;
         }
 
         @include lg {
-            top: 28%;
+            top : 28%;
         }
     }
 
     &__button-left {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        border: solid 1px $GREY_MIDDLE;
-        text-align: center;
-        transition: all .4s;
+        display    : inline-block;
+        width      : 50px;
+        height     : 50px;
+        border     : solid 1px $GREY_MIDDLE;
+        text-align : center;
+        transition : all .4s;
 
         &:before {
-            content: "\2190";
-            font-family: 'Open Sans', sans-serif;
-            font-size: 32px;
-            color: $GREY_MIDDLE;
+            content     : "\2190";
+            font-family : 'Open Sans', sans-serif;
+            font-size   : 32px;
+            color       : $GREY_MIDDLE;
         }
 
         &:hover {
-            background-color: $GREY;
+            background-color : $GREY;
 
             &:before {
-                color: $WHITE;
+                color : $WHITE;
             }
         }
     }
 
     &__button-right {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        border: solid 1px $GREY_MIDDLE;
-        text-align: center;
-        transition: all .4s;
+        display    : inline-block;
+        width      : 50px;
+        height     : 50px;
+        border     : solid 1px $GREY_MIDDLE;
+        text-align : center;
+        transition : all .4s;
 
         &:before {
-            content: "\2192";
-            font-family: 'Open Sans', sans-serif;
-            font-size: 32px;
-            font-weight: 300;
-            color: $GREY_MIDDLE;
+            content     : "\2192";
+            font-family : 'Open Sans', sans-serif;
+            font-size   : 32px;
+            font-weight : 300;
+            color       : $GREY_MIDDLE;
         }
 
         &:hover {
-            background-color: $GREY;
+            background-color : $GREY;
 
             &:before {
-                color: $WHITE;
+                color : $WHITE;
             }
         }
     }
