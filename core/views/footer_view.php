@@ -2,6 +2,7 @@
 $option = SingletonOptions::getOptions();
 $footer_img = $option['footer_logo'];
 $address = $option['address'];
+$unp = $option['unp'];
 $footer_img = $option['footer_logo'];
 $email = $option['email'];
 
@@ -51,6 +52,7 @@ $phone_4 = $option['phone_4'];
 					<div class="footer__office">
 						<span class="footer__office_title">Адвокатское бюро «МБПраво»</span>
 						<span class="footer__office_text"><?= $address;?></span>
+						<span class="footer__office_text"><?= $unp;?></span>
 					</div>
 				</div>
 				<div class="footer__copyright">

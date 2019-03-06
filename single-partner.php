@@ -94,7 +94,7 @@ $education = unserialize($partner_meta["education"][0]);
 							</div>
 						</div>
 						<div class="partner-description__experience-wrapper">
-							<div class="partner-description__title">адвоката за последнее время включает:</div>
+							<div class="partner-description__title">Образование:</div>
 							<div class="editor-content">
 								<ul>
 									<?php if (!empty($education)):

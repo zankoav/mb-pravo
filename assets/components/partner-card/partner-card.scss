@@ -97,6 +97,8 @@ $GREY_MIDDLE: #878787;
 
         @include md {
             padding-left: 4rem;
+            flex: 1 0 55%;
+            max-width: 55%;
         }
 
         @include lg {
