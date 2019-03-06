@@ -41,8 +41,11 @@ function mb_pravo_register_theme_options_metabox()
 		 'name' => esc_html__('Адрес', THEME_NAME),
 		 'id' => 'address',
 		 'type' => 'text',
-		 'default' => '220034, г. Минск, ул. Фрунзе, 3, комн. 203 УНП 805090058.'
-
+	));
+	$cmb_options->add_field(array(
+		 'name' => esc_html__('УНП', THEME_NAME),
+		 'id' => 'unp',
+		 'type' => 'text',
 	));
 	$cmb_options->add_field(array(
 		 'name' => esc_html__('Номера телефонов №1', THEME_NAME),
