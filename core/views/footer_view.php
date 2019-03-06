@@ -58,11 +58,11 @@
             </div>
             <div class="footer__copyright">
                 <span class="footer__copyright_text">© <?= date("Y"); ?>. Все права защищены</span>
-                <div class="footer__copyright_development" target="_blank" href="https://mastak.by">
+                <a class="footer__copyright_development" target="_blank" href="https://mastak.by">
                     <span class="footer__copyright_development-text">Разработка сайта</span>
                     <img class="footer__copyright_development-img"
                          src="/wp-content/themes/mb-pravo/src/icons/mastak-logo.11d091.svg" alt="mastak">
-                </div>
+                </a>
             </div>
         </div>
     </div>
