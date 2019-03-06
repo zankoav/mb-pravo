@@ -30,7 +30,11 @@ function partner_options_metabox()
 	$cmb_options->add_field(array(
 		 'name' => esc_html__('Опыт', THEME_NAME),
 		 'id' => 'experience',
-		 'type' => 'text',
+		 'type' => 'textarea_small',
+		 'repeatable' => true,
+		 'text' => array(
+			 'add_row_text' => 'Добавить',
+		 ),
 	));
 	$cmb_options->add_field(array(
 		 'name' => esc_html__('Специализации', THEME_NAME),

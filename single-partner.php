@@ -3,7 +3,9 @@ get_header();
 $partner_meta = get_post_meta(get_the_ID());
 $photo = $partner_meta["partner_photo"][0];
 $position = $partner_meta["position"][0];
-$experience = $partner_meta["experience"][0];
+
+$experience = unserialize($partner_meta["experience"][0]);
+
 $phone = $partner_meta["phone"][0];
 $email = $partner_meta["email"][0];
 
@@ -35,7 +37,11 @@ $education = unserialize($partner_meta["education"][0]);
 						<div class="partner-card__wrapper">
 							<div class="partner-card__title"><?= get_the_title(); ?></div>
 							<div class="partner-card__position"><?= $position; ?></div>
-							<div class="partner-card__date"><?= $experience; ?></div>
+							<div class="partner-card__date">
+								<?php foreach($experience as $item) :?>
+								<?= $item; ?><br/>
+								<?php endforeach;?>
+							</div>
 							<?php if (!empty($specialisations)): ?>
 								<div class="partner-card__specializations">Специализации:</div>
 								<ul class="partner-card__specializations-list">
