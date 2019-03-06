@@ -79,7 +79,7 @@ $education = unserialize($partner_meta["education"][0]);
 							</div>
 						</div>
 						<div class="partner-description__experience-wrapper partner-description__experience-wrapper_active">
-							<div class="partner-description__title">Профессиональный опыт адвоката за последнее время включает:</div>
+							<div class="partner-description__title">Профессиональный опыт:</div>
 							<div class="editor-content">
 								<ul>
 									<?php if (!empty($prof_experience)):
@@ -90,7 +90,7 @@ $education = unserialize($partner_meta["education"][0]);
 							</div>
 						</div>
 						<div class="partner-description__experience-wrapper">
-							<div class="partner-description__title">адвоката за последнее время включает:</div>
+							<div class="partner-description__title">Образование:</div>
 							<div class="editor-content">
 								<ul>
 									<?php if (!empty($education)):
