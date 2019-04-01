@@ -36,7 +36,11 @@ body {
         color : $WHITE;
     }
 }
-
+@media (max-width : 1279px) {
+    .home-template .header__item-link {
+        color : inherit;
+    }
+}
 .container {
     padding  : 0 1rem;
     position : relative;
