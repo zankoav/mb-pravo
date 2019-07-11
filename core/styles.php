@@ -25,5 +25,8 @@
 				wp_enqueue_style( 'practice', Assets::getCss( 'practice' ), false, null );
 			}
 
+            else {
+                wp_enqueue_style( 'contacts', Assets::getCss( 'contacts' ), false, null );
+            }
 		} );
 	} );

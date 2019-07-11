@@ -28,5 +28,9 @@ add_action('template_redirect', function () {
 		else if (is_singular('partner')) {
 			wp_enqueue_script('partner', Assets::getJs('partner'), false, null, true);
 		}
-	});
+        else {
+            wp_enqueue_script('contacts', Assets::getJs('contacts'), false, null, true);
+        }
+
+    });
 });
